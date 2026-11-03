@@ -1,8 +1,6 @@
 package wexlabs.dtstilllife.trees.cells;
 
-//import com.ferreusveritas.dynamictrees.cell.MatrixCell;
-
-import com.ferreusveritas.dynamictrees.systems.cell.MatrixCell;
+import com.ferreusveritas.dynamictrees.cell.MatrixCell;
 
 /**
  * @author Harley O'Connor

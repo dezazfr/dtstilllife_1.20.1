@@ -1,5 +1,7 @@
 package wexlabs.dtstilllife.trees.species;
 
+import org.jetbrains.annotations.NotNull;
+
 import com.ferreusveritas.dynamictrees.api.registry.TypedRegistry;
 import com.ferreusveritas.dynamictrees.block.branch.BasicBranchBlock;
 import com.ferreusveritas.dynamictrees.block.branch.BranchBlock;
@@ -8,10 +10,10 @@ import com.ferreusveritas.dynamictrees.block.leaves.DynamicLeavesBlock;
 import com.ferreusveritas.dynamictrees.systems.GrowSignal;
 import com.ferreusveritas.dynamictrees.tree.family.Family;
 import com.ferreusveritas.dynamictrees.tree.species.Species;
+
 import net.minecraft.core.BlockPos;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.Level;
-import org.jetbrains.annotations.NotNull;
 
 //Yoinked from DT BWG
 public class DiagonalPalmFamily extends Family {

@@ -1,6 +1,7 @@
 package wexlabs.dtstilllife.trees.cells;
 
 import com.ferreusveritas.dynamictrees.api.cell.Cell;
+
 import net.minecraft.core.Direction;
 
 public class SparseBranchCell implements Cell {

@@ -1,6 +1,7 @@
 package wexlabs.dtstilllife.trees.cells;
 
-import com.ferreusveritas.dynamictrees.api.voxmap.SimpleVoxmap;
+import com.ferreusveritas.dynamictrees.util.SimpleVoxmap;
+
 import net.minecraft.core.BlockPos;
 
 public class LeafClusters {
