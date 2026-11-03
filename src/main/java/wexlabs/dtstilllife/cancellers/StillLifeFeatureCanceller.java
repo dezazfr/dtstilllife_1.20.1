@@ -1,24 +1,20 @@
 package wexlabs.dtstilllife.cancellers;
-import com.dtteam.dynamictrees.api.worldgen.BiomePropertySelectors;
-import com.dtteam.dynamictrees.api.worldgen.FeatureCanceller;
+import java.util.List;
 
-import net.minecraft.core.registries.BuiltInRegistries;
+import org.apache.commons.lang3.StringUtils;
+
+import com.ferreusveritas.dynamictrees.api.worldgen.BiomePropertySelectors;
+import com.ferreusveritas.dynamictrees.api.worldgen.FeatureCanceller;
+
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.levelgen.feature.ConfiguredFeature;
-import net.minecraft.world.level.levelgen.feature.RandomSelectorFeature;
 import net.minecraft.world.level.levelgen.feature.WeightedPlacedFeature;
 import net.minecraft.world.level.levelgen.feature.configurations.FeatureConfiguration;
 import net.minecraft.world.level.levelgen.feature.configurations.RandomFeatureConfiguration;
 import net.minecraft.world.level.levelgen.feature.configurations.RandomPatchConfiguration;
 import net.minecraft.world.level.levelgen.feature.configurations.SimpleRandomFeatureConfiguration;
 import net.minecraft.world.level.levelgen.placement.PlacedFeature;
-import org.antlr.v4.runtime.tree.Tree;
-import org.apache.commons.lang3.StringUtils;
-import wexlabs.Mod;
-
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
+import net.minecraftforge.registries.ForgeRegistries;
 
 public class StillLifeFeatureCanceller<T extends FeatureConfiguration> extends FeatureCanceller {
     private static final List<String> treeWords = List.of("palm", "tree", "bushes");
@@ -52,7 +48,7 @@ public class StillLifeFeatureCanceller<T extends FeatureConfiguration> extends F
     private TreeSearchResult isOrContainsTreeFeature(ConfiguredFeature<?, ?> configuredFeature, BiomePropertySelectors.NormalFeatureCancellation featureCancellations) {
         if (isTree(configuredFeature, "tree")) {
             final ConfiguredFeature<?, ?> nextConfiguredFeature = configuredFeature.getFeatures().findFirst().get();
-            final ResourceLocation featureRegistryName = BuiltInRegistries.FEATURE.getKey(nextConfiguredFeature.feature());
+            final ResourceLocation featureRegistryName = ForgeRegistries.FEATURES.getKey(nextConfiguredFeature.feature());
             String nameSpace = null;
             if (featureRegistryName != null) {
                 nameSpace = featureRegistryName.getNamespace();
@@ -70,7 +66,7 @@ public class StillLifeFeatureCanceller<T extends FeatureConfiguration> extends F
         }
 
         if (isTree(placedFeature.feature().value())) {
-            ResourceLocation featureResLoc = BuiltInRegistries.FEATURE.getKey(placedFeature.feature().value().feature());
+            ResourceLocation featureResLoc = ForgeRegistries.FEATURES.getKey(placedFeature.feature().value().feature());
             String nameSpace = null;
             if (featureResLoc != null) {
                 nameSpace = featureResLoc.getNamespace();
@@ -86,7 +82,7 @@ public class StillLifeFeatureCanceller<T extends FeatureConfiguration> extends F
             final PlacedFeature currentPlacedFeature = feature.feature.value();
             final ConfiguredFeature<?,?> currentConfiguredFeature = currentPlacedFeature.feature().value();
             if (isTree(currentConfiguredFeature, feature.feature.getRegisteredName())) {
-                final ResourceLocation featureRegistryName = BuiltInRegistries.FEATURE.getKey(currentConfiguredFeature.getFeatures().findFirst().get().feature());
+                final ResourceLocation featureRegistryName = ForgeRegistries.FEATURES.getKey(currentConfiguredFeature.getFeatures().findFirst().get().feature());
                 String nameSpace = null;
                 if (featureRegistryName != null) {
                     nameSpace = featureRegistryName.getNamespace();
@@ -102,7 +98,7 @@ public class StillLifeFeatureCanceller<T extends FeatureConfiguration> extends F
     private TreeSearchResult containsTrees(SimpleRandomFeatureConfiguration featureConfig, BiomePropertySelectors.NormalFeatureCancellation featureCancellations) {
         for (ConfiguredFeature<?, ?> feature : featureConfig.getFeatures().toList()) {
             if (isTree(feature)) {
-                final ResourceLocation featureRegistryName = BuiltInRegistries.FEATURE.getKey(feature.getFeatures().findFirst().get().feature());
+                final ResourceLocation featureRegistryName = ForgeRegistries.FEATURES.getKey(feature.getFeatures().findFirst().get().feature());
                 String nameSpace = null;
                 if (featureRegistryName != null) {
                     nameSpace = featureRegistryName.getNamespace();
