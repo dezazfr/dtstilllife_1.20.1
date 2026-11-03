@@ -1,11 +1,12 @@
 package wexlabs.dtstilllife.trees.features;
 
-import com.dtteam.dynamictrees.api.configuration.ConfigurationProperty;
-import com.dtteam.dynamictrees.systems.genfeature.GenFeature;
-import com.dtteam.dynamictrees.systems.genfeature.GenFeatureConfiguration;
-import com.dtteam.dynamictrees.systems.genfeature.context.FullGenerationContext;
-import com.dtteam.dynamictrees.tree.species.Species;
-import com.dtteam.dynamictrees.worldgen.DynamicTreeGenerationContext;
+import com.ferreusveritas.dynamictrees.api.configuration.ConfigurationProperty;
+import com.ferreusveritas.dynamictrees.systems.genfeature.GenFeature;
+import com.ferreusveritas.dynamictrees.systems.genfeature.GenFeatureConfiguration;
+import com.ferreusveritas.dynamictrees.systems.genfeature.context.FullGenerationContext;
+import com.ferreusveritas.dynamictrees.tree.species.Species;
+import com.ferreusveritas.dynamictrees.worldgen.GenerationContext;
+
 import net.minecraft.core.Direction;
 import net.minecraft.resources.ResourceLocation;
 
@@ -20,6 +21,7 @@ public class ReplaceOnRadiusGenFeature extends GenFeature {
 
     public ReplaceOnRadiusGenFeature(ResourceLocation registryName) {
         super(registryName);
+        
     }
 
     @Override
@@ -44,7 +46,7 @@ public class ReplaceOnRadiusGenFeature extends GenFeature {
     protected boolean generate(GenFeatureConfiguration configuration, FullGenerationContext context) {
         if (context.radius() > configuration.get(MIN_RADIUS) || context.radius() < configuration.get(MAX_RADIUS)){
             Species species = configuration.get(SPECIES);
-            species.generate(new DynamicTreeGenerationContext(context.levelContext(), species, context.pos(), context.pos().mutable(), context.biome(), Direction.Plane.HORIZONTAL.getRandomDirection(context.random()), context.radius(), context.isWorldGen()));
+            species.generate(new GenerationContext(context.levelContext(), species, context.pos(), context.pos().mutable(), context.biome(), Direction.Plane.HORIZONTAL.getRandomDirection(context.random()), context.radius(), context.isWorldGen()));
             return true;
         }
         return false;

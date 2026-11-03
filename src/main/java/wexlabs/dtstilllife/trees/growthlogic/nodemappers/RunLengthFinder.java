@@ -1,7 +1,8 @@
 package wexlabs.dtstilllife.trees.growthlogic.nodemappers;
 
-import com.dtteam.dynamictrees.api.network.NodeInspector;
-import com.dtteam.dynamictrees.tree.TreeHelper;
+import com.ferreusveritas.dynamictrees.api.TreeHelper;
+import com.ferreusveritas.dynamictrees.api.network.NodeInspector;
+
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.world.level.LevelAccessor;

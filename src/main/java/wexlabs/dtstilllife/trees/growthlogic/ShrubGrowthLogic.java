@@ -1,13 +1,12 @@
 package wexlabs.dtstilllife.trees.growthlogic;
 
-import com.dtteam.dynamictrees.api.configuration.ConfigurationProperty;
-import com.dtteam.dynamictrees.systems.growthlogic.GrowthLogicKit;
-import com.dtteam.dynamictrees.systems.growthlogic.GrowthLogicKitConfiguration;
-import com.dtteam.dynamictrees.systems.growthlogic.context.DirectionManipulationContext;
-import com.dtteam.dynamictrees.utility.CoordUtils;
+import com.ferreusveritas.dynamictrees.api.configuration.ConfigurationProperty;
+import com.ferreusveritas.dynamictrees.growthlogic.GrowthLogicKit;
+import com.ferreusveritas.dynamictrees.growthlogic.GrowthLogicKitConfiguration;
+import com.ferreusveritas.dynamictrees.growthlogic.context.DirectionManipulationContext;
+
 import net.minecraft.core.Direction;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.util.Mth;
 
 public class ShrubGrowthLogic extends GrowthLogicKit {
     public static final ConfigurationProperty<Integer> MAX_TRUNK_HEIGHT = ConfigurationProperty.integer("max_trunk_height");

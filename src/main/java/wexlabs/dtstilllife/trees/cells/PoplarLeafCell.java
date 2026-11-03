@@ -2,7 +2,7 @@ package wexlabs.dtstilllife.trees.cells;
 
 
 
-import com.dtteam.dynamictrees.systems.cell.MatrixCell;
+import com.ferreusveritas.dynamictrees.systems.cell.MatrixCell;
 
 public class PoplarLeafCell extends MatrixCell {
 
