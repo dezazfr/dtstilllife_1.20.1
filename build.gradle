@@ -86,7 +86,7 @@ dependencies {
     minecraft "net.minecraftforge:forge:${minecraft_version}-${forge_version}"
     
     implementation fg.deobf("com.ferreusveritas.dynamictrees:DynamicTrees-${minecraft_version}:${dynamic_trees_version}")
-    implementation fg.deobf("curse.maven:dynamictreesplus-478155:${dynamic_trees_plus_version_id}")
+    implementation fg.deobf("com.ferreusveritas.dynamictreesplus:DynamicTreesPlus-${minecraft_version}:${dynamic_trees_plus_version}")
     implementation fg.deobf("curse.maven:vanillabackport-417430:${vanilla_backport_version_id}")
 }
 
