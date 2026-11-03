@@ -1,6 +1,8 @@
 {
     "pack": {
-        "description": "dtstilllife",
-        "pack_format": 48
+        "description" {
+            "text": "${mod_id}"
+        }
+        "pack_format": 15
     }
 }
