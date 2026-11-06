@@ -2,6 +2,7 @@ package wexlabs;
 
 import com.ferreusveritas.dynamictrees.api.cell.CellKit;
 import com.ferreusveritas.dynamictrees.api.registry.TypeRegistryEvent;
+import com.ferreusveritas.dynamictrees.api.registry.RegistryEvent;
 import com.ferreusveritas.dynamictrees.api.worldgen.FeatureCanceller;
 import com.ferreusveritas.dynamictrees.growthlogic.GrowthLogicKit;
 import com.ferreusveritas.dynamictrees.systems.genfeature.GenFeature;
@@ -32,66 +33,55 @@ import wexlabs.dtstilllife.trees.growthlogic.WillowGrowthLogic;
 import wexlabs.dtstilllife.trees.species.DiagonalPalmFamily;
 import wexlabs.dtstilllife.trees.species.GenUnderwaterSpecies;
 
-@EventBusSubscriber(modid = Mod.MOD_ID)
+@EventBusSubscriber(modid = DTStillLife.MOD_ID, bus = EventBusSubscriber.Bus.MOD)
 public class Registrator {
-    public static final FeatureCanceller CANCELLER = new StillLifeFeatureCanceller<>( ResourceLocation.fromNamespaceAndPath(Mod.MOD_ID, "tree"), TreeConfiguration.class);
+    
+    public static final FeatureCanceller CANCELLER = new StillLifeFeatureCanceller<>(new ResourceLocation(DTStillLife.MOD_ID, "tree"), TreeConfiguration.class);
 
-    public static final GenFeature REPLACE_ON_RADIUS = new ReplaceOnRadiusGenFeature(ResourceLocation.fromNamespaceAndPath(Mod.MOD_ID, "replace_on_radius"));
-    public static final GenFeature EXTRA_FLARE = new ExtraBottomFlareGenFeature(ResourceLocation.fromNamespaceAndPath(Mod.MOD_ID, "extra_bottom_flare"));
-    public static final GenFeature FOREST_SOIL = new ForestSoilGenFeature(ResourceLocation.fromNamespaceAndPath(Mod.MOD_ID, "forest_soil"));
+    public static final GenFeature REPLACE_ON_RADIUS = new ReplaceOnRadiusGenFeature(new ResourceLocation(DTStillLife.MOD_ID, "replace_on_radius"));
+    public static final GenFeature EXTRA_FLARE = new ExtraBottomFlareGenFeature(new ResourceLocation(DTStillLife.MOD_ID, "extra_bottom_flare"));
+    public static final GenFeature FOREST_SOIL = new ForestSoilGenFeature(new ResourceLocation(DTStillLife.MOD_ID, "forest_soil"));
 
-    public static final GrowthLogicKit LONG_BRANCH_CANOPY_GROWTH_LOGIC = new LongBranchCanopyGrowthLogic(ResourceLocation.fromNamespaceAndPath(Mod.MOD_ID, "long_branch_canopy"));
-    public static final GrowthLogicKit UP_AND_OUT_GROWTH_LOGIC = new UpAndOutGrowthLogic(ResourceLocation.fromNamespaceAndPath(Mod.MOD_ID, "up_and_out"));
-    public static final GrowthLogicKit BAOBAB_GROWTH_LOGIC = new BaobabGrowthLogic(ResourceLocation.fromNamespaceAndPath(Mod.MOD_ID, "baobab"));
-    public static final GrowthLogicKit CYPRESS_GROWTH_LOGIC = new CypressGrowthLogic(ResourceLocation.fromNamespaceAndPath(Mod.MOD_ID, "cypress"));
-    public static final GrowthLogicKit REDWOOD_GROWTH_LOGIC = new RedwoodGrowthLogic(ResourceLocation.fromNamespaceAndPath(Mod.MOD_ID, "redwood"));
-    public static final GrowthLogicKit SMALL_REDWOOD_GROWTH_LOGIC = new SmallRedwoodGrowthLogic(ResourceLocation.fromNamespaceAndPath(Mod.MOD_ID, "small_redwood"));
-    public static final GrowthLogicKit WILLOW_GROWTH_LOGIC = new WillowGrowthLogic(ResourceLocation.fromNamespaceAndPath(Mod.MOD_ID, "willow"));
-    public static final GrowthLogicKit CANOPY_GROWTH_LOGIC = new CanopyGrowthLogic(ResourceLocation.fromNamespaceAndPath(Mod.MOD_ID, "canopy"));
-    public static final GrowthLogicKit JUNIPER_GROWTH_LOGIC = new JuniperGrowthLogic(ResourceLocation.fromNamespaceAndPath(Mod.MOD_ID, "juniper"));
-    public static final GrowthLogicKit VARIATE_HEIGHT_GROWTH_LOGIC = new VariateHeightGrowthLogic(ResourceLocation.fromNamespaceAndPath(Mod.MOD_ID, "variate_height"));
-    public static final GrowthLogicKit PALM_GROWTH_LOGIC = new LeaningPalmGrowthLogic(ResourceLocation.fromNamespaceAndPath(Mod.MOD_ID, "palm"));
-    public static final GrowthLogicKit SHRUB_GROWTH_LOGIC = new ShrubGrowthLogic(ResourceLocation.fromNamespaceAndPath(Mod.MOD_ID, "shrub"));
-
+    public static final GrowthLogicKit LONG_BRANCH_CANOPY_GROWTH_LOGIC = new LongBranchCanopyGrowthLogic(new ResourceLocation(DTStillLife.MOD_ID, "long_branch_canopy"));
+    public static final GrowthLogicKit UP_AND_OUT_GROWTH_LOGIC = new UpAndOutGrowthLogic(new ResourceLocation(DTStillLife.MOD_ID, "up_and_out"));
+    public static final GrowthLogicKit BAOBAB_GROWTH_LOGIC = new BaobabGrowthLogic(new ResourceLocation(DTStillLife.MOD_ID, "baobab"));
+    public static final GrowthLogicKit CYPRESS_GROWTH_LOGIC = new CypressGrowthLogic(new ResourceLocation(DTStillLife.MOD_ID, "cypress"));
+    public static final GrowthLogicKit REDWOOD_GROWTH_LOGIC = new RedwoodGrowthLogic(new ResourceLocation(DTStillLife.MOD_ID, "redwood"));
+    public static final GrowthLogicKit SMALL_REDWOOD_GROWTH_LOGIC = new SmallRedwoodGrowthLogic(new ResourceLocation(DTStillLife.MOD_ID, "small_redwood"));
+    public static final GrowthLogicKit WILLOW_GROWTH_LOGIC = new WillowGrowthLogic(new ResourceLocation(DTStillLife.MOD_ID, "willow"));
+    public static final GrowthLogicKit CANOPY_GROWTH_LOGIC = new CanopyGrowthLogic(new ResourceLocation(DTStillLife.MOD_ID, "canopy"));
+    public static final GrowthLogicKit JUNIPER_GROWTH_LOGIC = new JuniperGrowthLogic(new ResourceLocation(DTStillLife.MOD_ID, "juniper"));
+    public static final GrowthLogicKit VARIATE_HEIGHT_GROWTH_LOGIC = new VariateHeightGrowthLogic(new ResourceLocation(DTStillLife.MOD_ID, "variate_height"));
+    public static final GrowthLogicKit PALM_GROWTH_LOGIC = new LeaningPalmGrowthLogic(new ResourceLocation(DTStillLife.MOD_ID, "palm"));
+    public static final GrowthLogicKit SHRUB_GROWTH_LOGIC = new ShrubGrowthLogic(new ResourceLocation(DTStillLife.MOD_ID, "shrub"));
 
     @SubscribeEvent
-    public static void registerFeatureCanceller (final RegistryEvent<FeatureCanceller> event) {
-        if (event.isEntryOfType(FeatureCanceller.class)) {
-            event.getRegistry().registerAll(CANCELLER);
-        }
+    public static void registerFeatureCanceller(final RegistryEvent<FeatureCanceller> event) {
+        event.getRegistry().registerAll(CANCELLER);
     }
 
     @SubscribeEvent
     public static void onGenFeatureRegistry(final RegistryEvent<GenFeature> event) {
-        if (event.isEntryOfType(GenFeature.class)) {
-            event.getRegistry().registerAll(REPLACE_ON_RADIUS, EXTRA_FLARE, FOREST_SOIL);
-        }
-
+        event.getRegistry().registerAll(REPLACE_ON_RADIUS, EXTRA_FLARE, FOREST_SOIL);
     }
-
 
     @SubscribeEvent
     public static void onGrowthLogicKitRegistry(final RegistryEvent<GrowthLogicKit> event) {
-        if (event.isEntryOfType(GrowthLogicKit.class)){
-           event.getRegistry().registerAll(SHRUB_GROWTH_LOGIC, PALM_GROWTH_LOGIC, VARIATE_HEIGHT_GROWTH_LOGIC, JUNIPER_GROWTH_LOGIC, LONG_BRANCH_CANOPY_GROWTH_LOGIC, UP_AND_OUT_GROWTH_LOGIC, BAOBAB_GROWTH_LOGIC, CYPRESS_GROWTH_LOGIC, REDWOOD_GROWTH_LOGIC, SMALL_REDWOOD_GROWTH_LOGIC, WILLOW_GROWTH_LOGIC, CANOPY_GROWTH_LOGIC);
-        }
-
+        event.getRegistry().registerAll(SHRUB_GROWTH_LOGIC, PALM_GROWTH_LOGIC, VARIATE_HEIGHT_GROWTH_LOGIC, JUNIPER_GROWTH_LOGIC, LONG_BRANCH_CANOPY_GROWTH_LOGIC, UP_AND_OUT_GROWTH_LOGIC, BAOBAB_GROWTH_LOGIC, CYPRESS_GROWTH_LOGIC, REDWOOD_GROWTH_LOGIC, SMALL_REDWOOD_GROWTH_LOGIC, WILLOW_GROWTH_LOGIC, CANOPY_GROWTH_LOGIC);
     }
 
     @SubscribeEvent
     public static void registerSpeciesTypes(final TypeRegistryEvent<Species> event) {
-        event.registerType(ResourceLocation.fromNamespaceAndPath(Mod.MOD_ID, "cypress"), GenUnderwaterSpecies.TYPE);
+        event.registerType(new ResourceLocation(DTStillLife.MOD_ID, "cypress"), GenUnderwaterSpecies.TYPE);
     }
 
     @SubscribeEvent
     public static void registerFamilyTypes(final TypeRegistryEvent<Family> event) {
-        event.registerType(ResourceLocation.fromNamespaceAndPath(Mod.MOD_ID, "palm"), DiagonalPalmFamily.TYPE);
+        event.registerType(new ResourceLocation(DTStillLife.MOD_ID, "palm"), DiagonalPalmFamily.TYPE);
     }
 
     @SubscribeEvent
     public static void onCellKitRegistry(final RegistryEvent<CellKit> event) {
-        if (event.isEntryOfType(CellKit.class)){
-            event.getRegistry().registerAll(CellKits.PALM, CellKits.POPLAR, CellKits.DOME, CellKits.JOSHUA, CellKits.WILLOW, CellKits.SAGEBRUSH, CellKits.SPARSE);
-        }
+        event.getRegistry().registerAll(CellKits.PALM, CellKits.POPLAR, CellKits.DOME, CellKits.JOSHUA, CellKits.WILLOW, CellKits.SAGEBRUSH, CellKits.SPARSE);
     }
 }
