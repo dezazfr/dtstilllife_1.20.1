@@ -1,6 +1,6 @@
 {
   "loader": "dynamictrees:surface_root",
   "textures": {
-    "bark": "minecraft:block/pale_oak_log"
+    "bark": "minecraft:block/spruce_log"
   }
 }

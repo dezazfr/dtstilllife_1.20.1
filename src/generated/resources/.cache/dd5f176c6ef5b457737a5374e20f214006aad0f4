@@ -1,5 +1,5 @@
-// 1.21.1	2026-06-17T08:11:16.9257908	dtstilllife DT Block Tags
-68b4ae6073d0c81f3d2ff09e331a348afb29254c data/dynamictrees/tags/block/branches_that_burn.json
-acf1b1de632c14aacdcabcd4b71c7c56243b0ca3 data/dynamictrees/tags/block/leaves.json
-e49deb7da6a10e9880dfdf745fccf2f5d7554284 data/dynamictrees/tags/block/saplings.json
-46cbd3f588f4371c3e7d9618f8983e17fac56892 data/dynamictrees/tags/block/stripped_branches_that_burn.json
+// 1.20.1	2026-11-06T19:37:35.1027617	dtstilllife DT Block Tags
+23a0e70c575ce1368e3ba170d0fc9332cae94c8d data/dynamictrees/tags/blocks/branches_that_burn.json
+8524bd5302875df292effc90871806e5886126c1 data/dynamictrees/tags/blocks/leaves.json
+58457a03aae87b5f41fbdbfb6764017d41ecec72 data/dynamictrees/tags/blocks/saplings.json
+fff4748daf621419047ef3dac58457b0844ee40d data/dynamictrees/tags/blocks/stripped_branches_that_burn.json

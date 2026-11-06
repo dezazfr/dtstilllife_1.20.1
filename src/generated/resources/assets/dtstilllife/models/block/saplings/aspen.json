@@ -3,6 +3,6 @@
   "render_type": "minecraft:cutout_mipped",
   "textures": {
     "leaves": "minecraft:block/acacia_leaves",
-    "log": "minecraft:block/stripped_pale_oak_log"
+    "log": "minecraft:block/stripped_birch_log"
   }
 }

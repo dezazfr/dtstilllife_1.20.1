@@ -1,7 +1,7 @@
 {
   "common_leaves": "dtstilllife:pine",
   "common_species": "dtstilllife:pine",
-  "primitive_log": "minecraft:pale_oak_log",
+  "primitive_log": "minecraft:spruce_log",
   "max_branch_radius": 18,
   "generate_surface_root": true,
   "max_signal_depth": 64
