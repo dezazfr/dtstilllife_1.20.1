@@ -46,7 +46,7 @@ public class ReplaceOnRadiusGenFeature extends GenFeature {
     protected boolean generate(GenFeatureConfiguration configuration, FullGenerationContext context) {
         if (context.radius() > configuration.get(MIN_RADIUS) || context.radius() < configuration.get(MAX_RADIUS)){
             Species species = configuration.get(SPECIES);
-            species.generate(new GenerationContext(context.levelContext(), species, context.pos(), context.pos().mutable(), context.biome(), Direction.Plane.HORIZONTAL.getRandomDirection(context.random()), context.radius(), context.isWorldGen()));
+            species.generate(new GenerationContext(context.levelContext(), species, context.pos(), context.pos().mutable(), context.biome(), Direction.Plane.HORIZONTAL.getRandomDirection(context.random()), context.radius(), context.bounds()));
             return true;
         }
         return false;

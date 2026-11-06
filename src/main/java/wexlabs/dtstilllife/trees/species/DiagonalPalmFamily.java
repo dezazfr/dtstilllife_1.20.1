@@ -54,7 +54,7 @@ public class DiagonalPalmFamily extends Family {
                     return signal;
                 }
                 // TODO: check if this got clobbered
-                signal.success = (leaves.growLeavesIfLocationIsSuitable(world, species.getLeavesProperties(), pos.above(), 0) != 0);
+                signal.success = (leaves.growLeavesIfLocationIsSuitable(world, species.getLeavesProperties(), pos.above(), 0));
                 if (signal.success) {
                     return leaves.branchOut(world, pos, signal);
                 }

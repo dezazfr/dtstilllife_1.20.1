@@ -4,6 +4,7 @@ import com.ferreusveritas.dynamictrees.api.registry.TypedRegistry;
 import com.ferreusveritas.dynamictrees.block.leaves.LeavesProperties;
 import com.ferreusveritas.dynamictrees.tree.family.Family;
 import com.ferreusveritas.dynamictrees.tree.species.Species;
+import com.ferreusveritas.dynamictrees.util.SafeChunkBounds;
 import com.ferreusveritas.dynamictrees.worldgen.JoCode;
 
 import net.minecraft.core.BlockPos;
@@ -43,7 +44,7 @@ public class GenUnderwaterSpecies extends Species {
     }
 
     @Override
-    public BlockPos preGeneration(LevelAccessor level, BlockPos.MutableBlockPos rootPos, int radius, Direction facing, boolean worldGen, JoCode joCode) {
+    public BlockPos preGeneration(LevelAccessor level, BlockPos.MutableBlockPos rootPos, int radius, Direction facing, SafeChunkBounds bounds, JoCode joCode) {
         if (this.isWater(level.getBlockState(rootPos))){
             for (int i=1; i<=maxDepth; i++){
                 rootPos.move(Direction.DOWN);
@@ -53,6 +54,6 @@ public class GenUnderwaterSpecies extends Species {
                     break;
             }
         }
-        return super.preGeneration(level, rootPos, radius, facing, worldGen, joCode);
+        return super.preGeneration(level, rootPos, radius, facing, bounds, joCode);
     }
 }

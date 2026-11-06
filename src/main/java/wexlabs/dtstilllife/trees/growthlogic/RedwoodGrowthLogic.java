@@ -10,7 +10,7 @@ import com.ferreusveritas.dynamictrees.growthlogic.context.PositionalSpeciesCont
 import com.ferreusveritas.dynamictrees.systems.GrowSignal;
 import com.ferreusveritas.dynamictrees.tree.species.Species;
 import com.ferreusveritas.dynamictrees.util.CoordUtils;
-import com.ferreusveritas.dynamictrees.utility.MathUtils;
+import com.ferreusveritas.dynamictrees.util.MathHelper;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -88,7 +88,7 @@ public class RedwoodGrowthLogic extends GrowthLogicKit {
         );
 
         //Select a direction from the probability map
-        int choice = MathUtils.selectRandomFromDistribution(signal.rand,
+        int choice = MathHelper.selectRandomFromDistribution(signal.rand,
                 probMap); // Select a direction from the probability map.
         return newDirectionSelected(configuration, context,
                 Direction.values()[choice != -1 ? choice : 1]); // Default to up if things are screwy
