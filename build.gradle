@@ -70,6 +70,18 @@ minecraft {
 }
 
 repositories {
+    exclusiveContent {
+        forRepository {
+            maven {
+                name = "Modrinth"
+                url = "https://api.modrinth.com/maven"
+            }
+        }
+        forRepositories(fg.repository) // Uncomment when using ForgeGradle
+        filter {
+            includeGroup "maven.modrinth"
+        }
+    }
     maven {
         url "https://cursemaven.com"
         content {
@@ -89,6 +101,7 @@ dependencies {
     implementation fg.deobf("com.ferreusveritas.dynamictreesplus:DynamicTreesPlus-${minecraft_version}:${dynamic_trees_plus_version}")
     implementation fg.deobf("curse.maven:dynamictrees-252818:${dynamic_trees_version_id}")
     implementation fg.deobf("curse.maven:vanillabackport-417430:${vanilla_backport_version_id}")
+    implementation "maven.modrinth:${still_life_mod_id}:${still_life_verion_id}"
 }
 
 // TASKS

@@ -1,8 +1,6 @@
 {
     "pack": {
-        "description" {
-            "text": "${mod_id}"
-        }
+        "description": "Resources for DT - Still Life",
         "pack_format": 15
     }
 }
