@@ -9,6 +9,7 @@ import com.ferreusveritas.dynamictrees.block.branch.ThickBranchBlock;
 import com.ferreusveritas.dynamictrees.block.leaves.DynamicLeavesBlock;
 import com.ferreusveritas.dynamictrees.systems.GrowSignal;
 import com.ferreusveritas.dynamictrees.tree.family.Family;
+import com.ferreusveritas.dynamictrees.tree.family.PalmFamily;
 import com.ferreusveritas.dynamictrees.tree.species.Species;
 
 import net.minecraft.core.BlockPos;
@@ -16,7 +17,7 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.Level;
 
 //Yoinked from DT BWG
-public class DiagonalPalmFamily extends Family {
+public class DiagonalPalmFamily extends PalmFamily {
 
     public static final TypedRegistry.EntryType<Family> TYPE = TypedRegistry.newType(DiagonalPalmFamily::new);
 
