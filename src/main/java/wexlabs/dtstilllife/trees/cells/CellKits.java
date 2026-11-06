@@ -14,11 +14,11 @@ import com.ferreusveritas.dynamictrees.cell.CellKits.BasicSolver;
 
 import net.minecraft.core.Direction;
 import net.minecraft.resources.ResourceLocation;
-import wexlabs.Mod;
+import wexlabs.DTStillLife;
 
 public class CellKits {
 
-    public static final CellKit SAGEBRUSH = new CellKit(ResourceLocation.fromNamespaceAndPath(Mod.MOD_ID, "sagebrush")) {
+    public static final CellKit SAGEBRUSH = new CellKit(ResourceLocation.fromNamespaceAndPath(DTStillLife.MOD_ID, "sagebrush")) {
         private final Cell branchCell = new NormalCell(5);
 
         private final Cell[] leafCells = {
@@ -60,7 +60,7 @@ public class CellKits {
         }
     };
 
-    public static final CellKit PALM = new CellKit(ResourceLocation.fromNamespaceAndPath(Mod.MOD_ID, "palm")) {
+    public static final CellKit PALM = new CellKit(ResourceLocation.fromNamespaceAndPath(DTStillLife.MOD_ID, "palm")) {
 
         private final Cell palmBranch = new Cell() {
             @Override
@@ -115,7 +115,7 @@ public class CellKits {
 
     };
 
-    public static final CellKit POPLAR = new CellKit(ResourceLocation.fromNamespaceAndPath(Mod.MOD_ID, "poplar")) {
+    public static final CellKit POPLAR = new CellKit(ResourceLocation.fromNamespaceAndPath(DTStillLife.MOD_ID, "poplar")) {
 
         private final Cell poplarBranch = new PoplarBranchCell();
         private final Cell poplarTopBranch = new PoplarTopBranchCell();
@@ -166,7 +166,7 @@ public class CellKits {
 
     };
 
-    public static final CellKit DOME = new CellKit(ResourceLocation.fromNamespaceAndPath(Mod.MOD_ID, "dome")) {
+    public static final CellKit DOME = new CellKit(ResourceLocation.fromNamespaceAndPath(DTStillLife.MOD_ID, "dome")) {
 
         private final Cell acaciaBranch = new Cell() {
             @Override
@@ -223,7 +223,7 @@ public class CellKits {
 
     };
 
-    public static final CellKit JOSHUA = new CellKit(ResourceLocation.fromNamespaceAndPath(Mod.MOD_ID, "joshua")) {
+    public static final CellKit JOSHUA = new CellKit(ResourceLocation.fromNamespaceAndPath(DTStillLife.MOD_ID, "joshua")) {
 
         private final Cell branch = new Cell() {
             @Override
@@ -294,7 +294,7 @@ public class CellKits {
         }
     };
 
-    public static final CellKit WILLOW = new CellKit(ResourceLocation.fromNamespaceAndPath(Mod.MOD_ID, "willow")) {
+    public static final CellKit WILLOW = new CellKit(ResourceLocation.fromNamespaceAndPath(DTStillLife.MOD_ID, "willow")) {
 
         private final Cell branch = new WillowBranchCell();
 
@@ -337,7 +337,7 @@ public class CellKits {
         }
     };
 
-    public static final CellKit SPARSE = new CellKit(ResourceLocation.fromNamespaceAndPath(Mod.MOD_ID, "sparse")) {
+    public static final CellKit SPARSE = new CellKit(ResourceLocation.fromNamespaceAndPath(DTStillLife.MOD_ID, "sparse")) {
 
         private final Cell sparseBranch = new SparseBranchCell();
         private final Cell sparseLeaves = new NormalCell(1);
