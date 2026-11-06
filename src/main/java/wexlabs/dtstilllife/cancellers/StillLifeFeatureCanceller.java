@@ -80,8 +80,11 @@ public class StillLifeFeatureCanceller<T extends FeatureConfiguration> extends F
     private TreeSearchResult containsTrees(RandomFeatureConfiguration featureConfig, BiomePropertySelectors.NormalFeatureCancellation featureCancellations) {
         for (WeightedPlacedFeature feature : featureConfig.features) {
             final PlacedFeature currentPlacedFeature = feature.feature.value();
-            final ConfiguredFeature<?,?> currentConfiguredFeature = currentPlacedFeature.feature().value();
-            if (isTree(currentConfiguredFeature, feature.feature.getRegisteredName())) {
+            final ConfiguredFeature<?, ?> currentConfiguredFeature = currentPlacedFeature.feature().value();
+            String registeredName = feature.feature.unwrapKey()
+                .map(key -> key.location().toString())
+                .orElse("");
+            if (isTree(currentConfiguredFeature, registeredName)) {
                 final ResourceLocation featureRegistryName = ForgeRegistries.FEATURES.getKey(currentConfiguredFeature.getFeatures().findFirst().get().feature());
                 String nameSpace = null;
                 if (featureRegistryName != null) {
