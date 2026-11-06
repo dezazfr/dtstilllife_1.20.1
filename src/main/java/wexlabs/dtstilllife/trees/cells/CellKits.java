@@ -10,6 +10,7 @@ import com.ferreusveritas.dynamictrees.cell.MetadataCell;
 import com.ferreusveritas.dynamictrees.cell.NormalCell;
 import com.ferreusveritas.dynamictrees.cell.PalmFrondCell;
 import com.ferreusveritas.dynamictrees.util.SimpleVoxmap;
+import com.ferreusveritas.dynamictrees.cell.CellKits.BasicSolver;
 
 import net.minecraft.core.Direction;
 import net.minecraft.resources.ResourceLocation;
@@ -31,7 +32,7 @@ public class CellKits {
                 new NormalCell(7)
         };
 
-        private final com.ferreusveritas.dynamictrees.systems.cell.CellKits.BasicSolver solver = new com.ferreusveritas.dynamictrees.systems.cell.CellKits.BasicSolver(new short[]{0x0514, 0x0423, 0x0412, 0x0312, 0x0211});
+        private final BasicSolver solver = new BasicSolver(new short[]{0x0514, 0x0423, 0x0412, 0x0312, 0x0211});
 
         @Override
         public Cell getCellForLeaves(int distance) {
@@ -85,7 +86,7 @@ public class CellKits {
                 new PalmFrondCell(7)
         };
 
-        private final com.ferreusveritas.dynamictrees.systems.cell.CellKits.BasicSolver palmSolver = new com.ferreusveritas.dynamictrees.systems.cell.CellKits.BasicSolver(new short[]{0x0514, 0x0413, 0x0312, 0x0221});
+        private final BasicSolver palmSolver = new BasicSolver(new short[]{0x0514, 0x0413, 0x0312, 0x0221});
 
         @Override
         public Cell getCellForLeaves(int hydro) {
@@ -99,7 +100,7 @@ public class CellKits {
 
         @Override
         public SimpleVoxmap getLeafCluster() {
-            return com.ferreusveritas.dynamictrees.systems.cell.LeafClusters.PALM;
+            return com.ferreusveritas.dynamictrees.cell.LeafClusters.PALM;
         }
 
         @Override
@@ -131,7 +132,7 @@ public class CellKits {
                 new PoplarLeafCell(7),
         };
 
-        private final CellSolver solver = new com.ferreusveritas.dynamictrees.systems.cell.CellKits.BasicSolver(new short[] {
+        private final CellSolver solver = new BasicSolver(new short[] {
                 0x0412, 0x0311, 0x0211
         });
 
@@ -193,7 +194,7 @@ public class CellKits {
                 new AcaciaLeafCell(7)
         };
 
-        private final com.ferreusveritas.dynamictrees.systems.cell.CellKits.BasicSolver acaciaSolver = new com.ferreusveritas.dynamictrees.systems.cell.CellKits.BasicSolver(new short[]{0x0514, 0x0423, 0x0412, 0x0312, 0x0211});
+        private final BasicSolver acaciaSolver = new BasicSolver(new short[]{0x0514, 0x0423, 0x0412, 0x0312, 0x0211});
 
         @Override
         public Cell getCellForLeaves(int hydro) {
@@ -207,7 +208,7 @@ public class CellKits {
 
         @Override
         public SimpleVoxmap getLeafCluster() {
-            return com.ferreusveritas.dynamictrees.systems.cell.LeafClusters.ACACIA;
+            return com.ferreusveritas.dynamictrees.cell.LeafClusters.ACACIA;
         }
 
         @Override
@@ -248,7 +249,7 @@ public class CellKits {
                 new JoshuaFrondCell(7)
         };
 
-        private final com.ferreusveritas.dynamictrees.systems.cell.CellKits.BasicSolver joshuaSolver = new com.ferreusveritas.dynamictrees.systems.cell.CellKits.BasicSolver(new short[]{0x0514, 0x0413});
+        private final BasicSolver joshuaSolver = new BasicSolver(new short[]{0x0514, 0x0413});
 
         @Override
         public Cell getCellForLeaves(int hydro) {
@@ -308,7 +309,7 @@ public class CellKits {
                 new WillowLeafCell(7)
         };
 
-        private final com.ferreusveritas.dynamictrees.systems.cell.CellKits.BasicSolver solver = new com.ferreusveritas.dynamictrees.systems.cell.CellKits.BasicSolver(new short[]{0x0817, 0x0726, 0x0625, 0x0714, 0x0614, 0x0514, 0x0413, 0x0312, 0x0211});
+        private final BasicSolver solver = new BasicSolver(new short[]{0x0817, 0x0726, 0x0625, 0x0714, 0x0614, 0x0514, 0x0413, 0x0312, 0x0211});
 
         @Override
         public Cell getCellForLeaves(int distance) {
@@ -341,7 +342,7 @@ public class CellKits {
         private final Cell sparseBranch = new SparseBranchCell();
         private final Cell sparseLeaves = new NormalCell(1);
 
-        private final CellSolver solver = new  com.ferreusveritas.dynamictrees.systems.cell.CellKits.BasicSolver(new short[] {0x0211});
+        private final CellSolver solver = new  BasicSolver(new short[] {0x0211});
 
         @Override
         public Cell getCellForLeaves(int hydro) {
