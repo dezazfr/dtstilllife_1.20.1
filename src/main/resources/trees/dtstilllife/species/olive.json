@@ -13,5 +13,5 @@
     "sparse": 1.1,
     "#c:is_cold": 0.5
   },
-  "acceptable_soils": ["dirt_like"]
+  "acceptable_soils": ["custom_dirt_like"]
 }

@@ -6,5 +6,5 @@
   "soil_longevity": 1,
   "leaves_properties": "oak_undergrowth",
   "preferred_climate" : "temperate",
-  "acceptable_soils": ["dirt_like"]
+  "acceptable_soils": ["custom_dirt_like"]
 }

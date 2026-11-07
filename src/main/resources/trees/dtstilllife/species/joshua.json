@@ -18,6 +18,6 @@
   "generate_sapling": true,
   "preferred_climate": "arid",
   "perfect_biomes": { "tags": [ "#c:is_desert", "#minecraft:is_overworld" ] },
-  "acceptable_soils": ["dirt_like", "sand_like"],
+  "acceptable_soils": ["custom_dirt_like", "sand_like"],
   "features" : []
 }

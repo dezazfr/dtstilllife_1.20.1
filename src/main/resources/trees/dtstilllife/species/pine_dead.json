@@ -7,7 +7,7 @@
   "growth_rate": 0.9,
   "growth_logic_kit": "conifer",
   "world_gen_acceptable_soils": [ "snow_like" ],
-  "acceptable_soils": ["dirt_like"],
+  "acceptable_soils": ["custom_dirt_like"],
   "generate_seed": false,
   "leaves_properties": "bare",
   "can_bone_meal_tree": false

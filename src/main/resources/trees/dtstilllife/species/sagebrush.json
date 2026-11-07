@@ -8,7 +8,7 @@
   "max_branch_radius": 4,
   "growth_rate": 1.0,
   "leaves_properties": "dtstilllife:sagebrush",
-  "acceptable_soils": [ "dirt_like" ],
+  "acceptable_soils": [ "custom_dirt_like" ],
   "lang_overrides": {
     "seed": "Sagebrush Seed"
   }

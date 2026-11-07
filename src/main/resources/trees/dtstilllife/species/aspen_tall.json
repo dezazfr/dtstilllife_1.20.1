@@ -7,7 +7,7 @@
   "growth_rate": 1.0,
   "world_gen_leaf_map_height": 64,
   "leaves_properties": "dtstilllife:aspen",
-  "acceptable_soils": [ "dirt_like" ],
+  "acceptable_soils": [ "custom_dirt_like" ],
   "features": [
     {
       "name": "dtstilllife:forest_soil",

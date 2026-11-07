@@ -9,7 +9,7 @@
   "growth_logic_kit": "conifer",
   "leaves_properties": "dtstilllife:black_pine",
   "primitive_sapling": "minecraft:spruce_sapling",
-  "acceptable_soils": ["dirt_like"],
+  "acceptable_soils": ["custom_dirt_like"],
   "features" : [
     "conifer_topper",
     {

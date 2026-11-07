@@ -18,5 +18,5 @@
   "perfect_biomes": {
     "tag": "#minecraft:is_jungle"
   },
-  "acceptable_soils": ["dirt_like","sand_like"]
+  "acceptable_soils": ["custom_dirt_like","sand_like"]
 }

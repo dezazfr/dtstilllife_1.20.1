@@ -15,8 +15,8 @@
     "#c:is_dry": 0.7
   },
   "primitive_sapling": "spruce_sapling",
-  "acceptable_soils": ["dirt_like" ],
-  "world_gen_acceptable_soils": [ "mud_like", "dirt_like" ],
+  "acceptable_soils": ["custom_dirt_like" ],
+  "world_gen_acceptable_soils": [ "mud_like", "custom_dirt_like" ],
   "features" : [
     {
       "name": "dtstilllife:forest_soil",

@@ -8,5 +8,5 @@
   "leaves_properties": "bare",
   "can_bone_meal_tree": false,
   "generate_seed": false,
-  "acceptable_soils": [ "dirt_like" ]
+  "acceptable_soils": [ "custom_dirt_like" ]
 }

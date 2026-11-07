@@ -10,7 +10,7 @@
   "preferred_climate": "temperate",
   "primitive_sapling": "minecraft:spruce_sapling",
   "world_gen_acceptable_soils": ["snow_like"],
-  "acceptable_soils": ["dirt_like"],
+  "acceptable_soils": ["custom_dirt_like"],
   "features": [
     "conifer_topper",
     {

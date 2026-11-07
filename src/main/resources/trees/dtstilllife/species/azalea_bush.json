@@ -13,7 +13,7 @@
     "preferred_climate" : "temperate",
     "climate_tolerance": 0.4,
     "force_soil": "rooted_dirt",
-    "acceptable_soils": ["dirt_like"],
+    "acceptable_soils": ["custom_dirt_like"],
     "world_gen_acceptable_soils": ["sand_like", "snow_like", "terracotta_like"],
     "features": [
         {

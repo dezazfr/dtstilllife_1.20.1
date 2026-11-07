@@ -10,8 +10,8 @@
     "#c:is_dry": 0.5
   },
   "perfect_biomes": { "tag": "#c:is_swamp" },
-  "acceptable_soils": ["dirt_like", "water_like"],
-  "world_gen_acceptable_soils": [ "mud_like", "dirt_like", "water_like" ],
+  "acceptable_soils": ["custom_dirt_like", "water_like"],
+  "world_gen_acceptable_soils": [ "mud_like", "custom_dirt_like", "water_like" ],
   "generate_seed": false,
   "features": [
     {

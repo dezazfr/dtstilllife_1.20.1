@@ -16,8 +16,8 @@
   },
   "perfect_biomes": { "tags": [ "#c:is_swamp", "#minecraft:is_overworld" ] },
   "primitive_sapling": "spruce_sapling",
-  "acceptable_soils": ["dirt_like" ],
-  "world_gen_acceptable_soils": [ "mud_like", "dirt_like" ],
+  "acceptable_soils": ["custom_dirt_like" ],
+  "world_gen_acceptable_soils": [ "mud_like", "custom_dirt_like" ],
   "lang_overrides": {
     "seed": "Cypress Cone"
   }

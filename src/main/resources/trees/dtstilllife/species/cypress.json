@@ -17,8 +17,8 @@
   },
   "perfect_biomes": { "tags": [ "#c:is_swamp", "#minecraft:is_overworld" ] },
   "primitive_sapling": "spruce_sapling",
-  "acceptable_soils": [ "water_like", "dirt_like" ],
-  "world_gen_acceptable_soils": [ "mud_like", "dirt_like", "water_like" ],
+  "acceptable_soils": [ "water_like", "custom_dirt_like" ],
+  "world_gen_acceptable_soils": [ "mud_like", "custom_dirt_like", "water_like" ],
   "features": [
     "dtstilllife:extra_bottom_flare",
     {

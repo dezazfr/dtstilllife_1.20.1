@@ -6,7 +6,7 @@
   "lowest_branch_height": 8,
   "growth_rate": 1.0,
   "leaves_properties": "dtstilllife:aspen",
-  "acceptable_soils": [ "dirt_like" ],
+  "acceptable_soils": [ "custom_dirt_like" ],
   "features": [
     {
       "name": "dtstilllife:forest_soil",

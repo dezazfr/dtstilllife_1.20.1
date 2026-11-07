@@ -17,8 +17,8 @@
   "world_gen_leaf_map_height": 132,
   "common_override": { "name": ".*redwood.*" },
   "perfect_biomes": { "name": ".*redwood.*" },
-  "world_gen_acceptable_soils": [ "dirt_like" ],
-  "acceptable_soils": ["dirt_like"],
+  "world_gen_acceptable_soils": [ "custom_dirt_like" ],
+  "acceptable_soils": ["custom_dirt_like"],
   "features" : [
     "conifer_topper",
     {
