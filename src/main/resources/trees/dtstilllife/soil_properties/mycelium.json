@@ -1,0 +1,4 @@
+{
+  "primitive_soil": "mycelium",
+  "acceptable_soils": [ "custom_dirt_like"]
+}
