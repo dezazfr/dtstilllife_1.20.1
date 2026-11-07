@@ -11,8 +11,8 @@
           "birch_bush": 8
         }
       },
-      "density": 0.9,
-      "chance": "if(simplex(x/64,0,z/64) > 0.7, 0.75, 0.02)"
+      "density": 0.95,
+      "chance": 0.55
     }
   },
   {
@@ -28,8 +28,8 @@
           "larch": 1
         }
       },
-      "density": 0.5,
-      "chance": "if(simplex(x/100,0,z/100) > 0.7, 0.5, 0.02)"
+      "density": 0.7,
+      "chance": 0.45
     }
   },
   {
@@ -45,8 +45,8 @@
           "birch_bush": 5
         }
       },
-      "density": "simplex(x/128,0,z/128) + 0.25",
-      "chance": "if(is('birch_bush'), if(simplex(x/180,0,z/180) > 0.65, 0.75, 0.01), if(simplex(x/120,0,z/120) > 0.7, 0.85, 0.01))"
+      "density": 0.65,
+      "chance": 0.5
     }
   },
   {
@@ -62,8 +62,8 @@
           "spruce_dead": 1
         }
       },
-      "density": "simplex(x/80,0,z/80) + 0.3",
-      "chance": "if(simplex(x/80,0,z/80) >= 0.3, 1, 0.01)",
+      "density": 0.85,
+      "chance": 0.75,
       "forestness": 0.6
     }
   },
@@ -80,8 +80,8 @@
           "spruce_dead": 1
         }
       },
-      "density": "simplex(x/128,0,z/128) + 0.3",
-      "chance": "if(simplex(x/80,0,z/80) >= 0.64, 0.85, 0.01)"
+      "density": 0.55,
+      "chance": 0.45
     }
   },
   {
@@ -96,8 +96,8 @@
           "oak_undergrowth": 1
         }
       },
-      "density": "simplex(x/80,0,z/80) + 0.25)",
-      "chance": "if(simplex(x/80,0,z/80) >= 0.64, 0.85, 0.01)"
+      "density": 0.65,
+      "chance": 0.45
     }
   },
   {
@@ -113,8 +113,8 @@
           "spruce_dead": 1
         }
       },
-      "density": "simplex(x/150,0,z/150) + 0.25",
-      "chance": "if(simplex(x/150,0,z/150) >= 0.2, simplex(x/150,0,z/150) + 0.25, 0.01)",
+      "density": 0.8,
+      "chance": 0.7,
       "forestness": 0.6
     }
   },
@@ -133,8 +133,8 @@
           "oak_undergrowth": 4
         }
       },
-      "density": "simplex(x/256,0,z/256) + 0.35",
-      "chance": "if(simplex(x/160,0,z/160) > 0.6, simplex(x/160,0,z/160) * 0.8, 0.05)",
+      "density": 0.7,
+      "chance": 0.5,
       "forestness": 0.5
     }
   },
@@ -153,8 +153,8 @@
           "oak_undergrowth": 30
         }
       },
-      "density": "simplex(x/256,0,z/256) + 0.35",
-      "chance": "if(simplex(x/64,0,z/64) > 0.75, 0.7, 0.01)"
+      "density": 0.5,
+      "chance": 0.35
     }
   },
   {
@@ -173,8 +173,8 @@
           "spruce_dead": 1
         }
       },
-      "density": "simplex(x/256,0,z/256) + 0.35",
-      "chance": "if(simplex(x/120,0,z/120) > 0.1, 1.0, 0.1)",
+      "density": 0.9,
+      "chance": 0.85,
       "forestness": 1.0
     }
   },
@@ -194,8 +194,8 @@
           "oak_undergrowth": 4
         }
       },
-      "density": "simplex(x/256,0,z/256) + 0.35",
-      "chance": "if(simplex(x/120,0,z/120) > 0.1, 1.0, 0.1)",
+      "density": 0.85,
+      "chance": 0.8,
       "forestness": 1.0
     }
   },
@@ -210,8 +210,8 @@
           "birch_bush": 4
         }
       },
-      "density": 1.0,
-      "chance": 0.01
+      "density": 0.4,
+      "chance": 0.15
     }
   },
   {
@@ -228,8 +228,8 @@
           "cypress" : 6
         }
       },
-      "density": 0.4,
-      "chance": "if(is('birch_bush'), 0.4, if(simplex(x/75,0,z/75) > 0.7, 0.85, 0.01))"
+      "density": 0.75,
+      "chance": 0.65
     }
   },
   {
@@ -247,8 +247,8 @@
           "beech": 1
         }
       },
-      "density": "simplex(x/150,0,z/150) + 0.35",
-      "chance": "if(simplex(x/160,0,z/160) > 0.2, 1.0, 0.1)",
+      "density": 0.9,
+      "chance": 0.85,
       "forestness": 1.0
     }
   },
@@ -267,8 +267,8 @@
           "beech": 1
         }
       },
-      "density": 1.0,
-      "chance": 1.0,
+      "density": 0.75,
+      "chance": 0.7,
       "forestness": 1.0
     }
   },
@@ -283,8 +283,8 @@
           "birch_bush": 3
         }
       },
-      "density": 1.0,
-      "chance": "if(simplex(x/80,0,z/80) > 0.75, 0.7, 0.01)"
+      "density": 0.45,
+      "chance": 0.3
     }
   },
   {
@@ -298,8 +298,8 @@
           "birch_bush": 3
         }
       },
-      "density": 1.0,
-      "chance": "if(simplex(x/64,0,z/64) > 0.7, simplex(x/64,0,z/64) + 0.1, 0.01)"
+      "density": 0.5,
+      "chance": 0.35
     }
   },
   {
@@ -315,8 +315,8 @@
           "juniper": 1
         }
       },
-      "density": 0.8,
-      "chance": "if(simplex(x/64,0,z/64) >= 0.85, 0.85, 0.01)"
+      "density": 0.6,
+      "chance": 0.4
     }
   },
   {
@@ -337,8 +337,8 @@
           "oak_undergrowth": 1
         }
       },
-      "density": "simplex(x/256,0,z/256) + 0.35",
-      "chance": "if(simplex(x/120,0,z/120) > 0.1, 1.0, 0.1)",
+      "density": 1.0,
+      "chance": 1.0,
       "multipass": true,
       "forestness": 1.0
     }
@@ -349,8 +349,8 @@
     },
     "apply": {
       "species": "dtstilllife:birch_bush",
-      "density": 1.0,
-      "chance": "if(simplex(x/100,0,z/100) > 0.7, 0.65, 0.02)"
+      "density": 0.5,
+      "chance": 0.35
     }
   },
   {
@@ -367,8 +367,8 @@
           "larch": 5
         }
       },
-      "density": "simplex(x/256,0,z/256) + 0.35",
-      "chance": "if(simplex(x/120,0,z/120) > 0.1, 1.0, 0.1)",
+      "density": 0.95,
+      "chance": 0.9,
       "forestness": 1.0
     }
   },
@@ -387,8 +387,8 @@
           "oak_undergrowth": 4
         }
       },
-      "density": "simplex(x/256,0,z/256) + 0.35",
-      "chance": "if(simplex(x/150,0,z/150) > 0.30, 0.9, 0.1)"
+      "density": 0.7,
+      "chance": 0.6
     }
   },
   {
@@ -406,8 +406,8 @@
           "birch_bush": 1
         }
       },
-      "density": "simplex(x/128,0,z/128) + 0.25",
-      "chance": "if(simplex(x/80,0,z/80) > 0.2, 1.0, 0.02)",
+      "density": 0.85,
+      "chance": 0.8,
       "forestness": 1.0
     }
   },
@@ -423,8 +423,8 @@
           "palm": 3
         }
       },
-      "density": 1.0,
-      "chance": "if(simplex(x/160,0,z/160) > 0.84, 0.4, 0.01)"
+      "density": 0.75,
+      "chance": 0.6
     }
   },
   {
@@ -439,8 +439,8 @@
           "acacia": 7
         }
       },
-      "density": 0.7,
-      "chance": "if(is('birch_bush','oak_undergrowth'), 1, if(simplex(x/40,0,z/40) > 0.6, 0.75, 0.02))"
+      "density": 0.65,
+      "chance": 0.5
     }
   },
   {
@@ -458,8 +458,8 @@
           "juniper": 1
         }
       },
-      "density": 0.75,
-      "chance": "if(simplex(x/64,0,z/64) >= 0.5 , 0.85, 0.01)"
+      "density": 0.6,
+      "chance": 0.45
     }
   },
   {
@@ -475,8 +475,8 @@
           "birch": 3
         }
       },
-      "density": "simplex(x/256,0,z/256) + 0.25",
-      "chance": "if(simplex(x/150,0,z/150) > 0.30, simplex(x/150,0,z/150) + 0.3, 0.1)",
+      "density": 0.95,
+      "chance": 0.9,
       "forestness": 0.8
     }
   },
@@ -495,8 +495,8 @@
           "oak_undergrowth": 2
         }
       },
-      "density": "simplex(x/256,0,z/256) + 0.35",
-      "chance": "if(simplex(x/120,0,z/120) > 0.1, 1.0, 0.1)",
+      "density": 1.0,
+      "chance": 1.0,
       "forestness": 1.0
     }
   },
@@ -513,8 +513,8 @@
           "birch": 3
         }
       },
-      "density": "simplex(x/256,0,z/256) + 0.25",
-      "chance": "if(simplex(x/150,0,z/150) > 0.30, simplex(x/150,0,z/150) + 0.3, 0.1)",
+      "density": 0.8,
+      "chance": 0.75,
       "forestness": 0.8
     }
   },
@@ -531,8 +531,8 @@
           "birch_bush": 5
         }
       },
-      "density": "simplex(x/128,0,z/128) + 0.25",
-      "chance": "if(is('birch_bush'), if(simplex(x/180,0,z/180) > 0.65, 0.75, 0.01), if(simplex(x/120,0,z/120) > 0.7, 0.85, 0.01))"
+      "density": 0.7,
+      "chance": 0.6
     }
   },
   {
@@ -546,8 +546,8 @@
           "birch_bush": 10
         }
       },
-      "density": 1.0,
-      "chance": "if(simplex(x/100,0,z/100) >= 0.75, simplex(x/100,0,z/100), 0.01)"
+      "density": 0.65,
+      "chance": 0.55
     }
   },
   {
@@ -561,8 +561,8 @@
           "birch_bush": 10
         }
       },
-      "density": 1.0,
-      "chance": "if(simplex(x/75,0,z/75) >= 0.8, simplex(x/75,0,z/75) + 0.25, 0.01)"
+      "density": 0.7,
+      "chance": 0.6
     }
   },
   {
@@ -580,8 +580,8 @@
           "oak_bush_large": 50
         }
       },
-      "density": "simplex(x/90,0,z/90)",
-      "chance": "if(is('oak_bush_large','oak_undergrowth'), 1, if(simplex(x/90,0,z/90) >= 0.30, simplex(x/90,0,z/90), 0.20))"
+      "density": 0.75,
+      "chance": 0.7
     }
   },
   {
@@ -597,8 +597,8 @@
           "birch_bush": 5
         }
       },
-      "density": "simplex(x/128,0,z/128) + 0.25",
-      "chance": "if(is('birch_bush'), if(simplex(x/180,0,z/180) > 0.65, 0.75, 0.01), if(simplex(x/120,0,z/120) > 0.6, 0.85, 0.01))"
+      "density": 0.6,
+      "chance": 0.5
     }
   },
   {
@@ -613,8 +613,8 @@
           "spruce_dead": 1
         }
       },
-      "density": "simplex(x/150,0,z/150) + 0.2",
-      "chance": 1
+      "density": 0.9,
+      "chance": 1.0
     }
   },
   {
@@ -629,8 +629,8 @@
           "spruce_dead": 1
         }
       },
-      "density": "simplex(x/75,0,z/75) + 0.2",
-      "chance": "if(simplex(x/75,0,z/75) >= 0.7, 0.85, 0.1)"
+      "density": 0.65,
+      "chance": 0.55
     }
   },
   {
@@ -645,8 +645,8 @@
           "acacia": 80
         }
       },
-      "density": "simplex(x/150,0,z/150)",
-      "chance": "if(simplex(x/150,0,z/150) >= 0.64, simplex(x/150,0,z/150) * 0.25, 0.01)"
+      "density": 0.5,
+      "chance": 0.4
     }
   },
   {
@@ -665,8 +665,8 @@
           "mahogany": 20
         }
       },
-      "density": "simplex(x/120,0,z/120)",
-      "chance": "if(is('oak_bush_large','oak_undergrowth'), 1, if(simplex(x/120,0,z/120) > 0.4, 1.0, 0.02))",
+      "density": 0.8,
+      "chance": 0.75,
       "forestness": 0.5
     }
   },
@@ -686,8 +686,8 @@
           "palm": 2
         }
       },
-      "density": "simplex(x/256,0,z/256) + 0.25",
-      "chance": "if(simplex(x/75,0,z/75) > 0.15, 1.0, 0.1)",
+      "density": 0.9,
+      "chance": 0.85,
       "forestness": 1.0
     }
   },
@@ -706,8 +706,8 @@
           "oak_bush_large": 2
         }
       },
-      "density": "simplex(x/256,0,z/256) + 0.25",
-      "chance": "if(simplex(x/75,0,z/75) > 0.5, 1.0, 0.1)"
+      "density": 0.45,
+      "chance": 0.35
     }
   },
   {
@@ -725,8 +725,8 @@
           "larch": 4
         }
       },
-      "density": "simplex(x/128,0,z/128)",
-      "chance": "if(simplex(x/80,0,z/80) > 0.2, 1.0, 0.02)",
+      "density": 0.85,
+      "chance": 0.8,
       "forestness": 1.0
     }
   },
@@ -745,8 +745,8 @@
           "birch_bush": 500
         }
       },
-      "density": "simplex(x/75,0,z/75)",
-      "chance": "if(simplex(x/75,0,z/75) >= 0.75, simplex(x/75,0,z/75) + 0.25, 0.01)"
+      "density": 0.7,
+      "chance": 0.65
     }
   },
   {
@@ -761,8 +761,8 @@
           "birch_bush": 10
         }
       },
-      "density": 1.0,
-      "chance": "if(simplex(x/100,0,z/100) > 0.82, 0.8, 0.0)"
+      "density": 0.55,
+      "chance": 0.45
     }
   },
   {
@@ -771,8 +771,8 @@
     },
     "apply": {
       "species": "mangrove",
-      "density": "simplex(x/75,0,z/75) + 0.15",
-      "chance": "if(simplex(x/75,0,z/75) > 0.4, 1, 0.02)"
+      "density": 0.9,
+      "chance": 0.85
     }
   },
   {
@@ -787,8 +787,8 @@
           "birch_bush": 10
         }
       },
-      "density": 1.0,
-      "chance": "if(simplex(x/100,0,z/100) > 0.95, 0.8, 0.0)"
+      "density": 0.5,
+      "chance": 0.4
     }
   },
   {
@@ -809,8 +809,8 @@
           "olive": 3
         }
       },
-      "density": "simplex(x/80,0,z/80)",
-      "chance": "if(simplex(x/80,0,z/80) > 0.2, 0.95, 0.05)",
+      "density": 0.95,
+      "chance": 0.9,
       "forestness": 1.0
     }
   },
@@ -827,8 +827,8 @@
           "birch_bush": 8
         }
       },
-      "density": 0.4,
-      "chance": "if(simplex(x/64,0,z/64) > 0.8, 0.6, 0.02)"
+      "density": 0.65,
+      "chance": 0.5
     }
   },
   {
@@ -850,8 +850,8 @@
           "olive": 3
         }
       },
-      "density": "simplex(x/150,0,z/150) + 0.3",
-      "chance": "if(is('oak_undergrowth', 'large_oak_bush', 'birch_bush'), 0.8 , if(simplex(x/90,0,z/90) >= 0.64, simplex(x/100,0,z/100) * 0.5, 0.05))",
+      "density": 0.8,
+      "chance": 0.7,
       "forestness": 0.75
     }
   },
@@ -871,8 +871,8 @@
           "olive": 2
         }
       },
-      "density": 0.0,
-      "chance": 0.03
+      "density": 0.45,
+      "chance": 0.35
     }
   },
   {
@@ -896,8 +896,8 @@
           "willow_dead": 40
         }
       },
-      "density": 0.55,
-      "chance": "if(is('birch_bush','oak_bush_large','oak_undergrowth'), 1, if(simplex(x/90,0,z/90) > 0.3, 1, 0.02))"
+      "density": 0.9,
+      "chance": 0.85
     }
   },
   {
@@ -915,8 +915,8 @@
           "black_pine": 50
         }
       },
-      "density": 0.6,
-      "chance": "if(is('birch_bush','oak_undergrowth'), 1, if(simplex(x/75,0,z/75) > 0.55, 1, 0.02))",
+      "density": 0.95,
+      "chance": 0.9,
       "forestness": 1.0
     }
   },
@@ -938,8 +938,8 @@
           "birch_dead": 30
         }
       },
-      "density": 0.4,
-      "chance": "if(is('birch_bush','oak_undergrowth'), 0.4, if(simplex(x/75,0,z/75) > 0.7, 0.85, 0.01))"
+      "density": 0.8,
+      "chance": 0.75
     }
   },
   {
@@ -960,9 +960,9 @@
           "beech": 2
         }
       },
-      "density": "noise() * 2.0",
-      "chance": "if(is('birch_bush','spruce_bush','oak_undergrowth'), 1, if(simplex(x/150,0,z/150) >= 0.64, simplex(x/150,0,z/150) * 0.35, 0.01))",
-      "forestness" : 0.5
+      "density": 0.7,
+      "chance": 0.6,
+      "forestness": 0.5
     }
   },
   {
@@ -984,8 +984,8 @@
           "spruce_bush": 1
         }
       },
-      "density": "simplex(x/250,0,z/250) + 0.25",
-      "chance": "if(simplex(x/80,0,z/80) > 0.2, 1.0, 0.02)",
+      "density": 0.95,
+      "chance": 0.9,
       "multipass": true,
       "forestness": 1.0
     }
@@ -1008,8 +1008,8 @@
           "spruce_bush": 1
         }
       },
-      "density": "simplex(x/120,0,z/120)",
-      "chance": "if(simplex(x/120,0,z/120) > 0.65,  simplex(x/120,0,z/120), 0.05)",
+      "density": 0.75,
+      "chance": 0.65,
       "forestness": 0.75
     }
   },
@@ -1030,8 +1030,8 @@
           "oak_bush_large": 300
         }
       },
-      "density": 0.4,
-      "chance": "if(is('birch_bush','oak_bush_large','oak_undergrowth'), 1, if(simplex(x/90,0,z/90) > 0.3, 1, 0.02))",
+      "density": 1.0,
+      "chance": 0.95,
       "forestness": 1.0
     }
   },
@@ -1047,8 +1047,8 @@
           "spruce": 1
         }
       },
-      "density": "simplex(x/150,0,z/150)",
-      "chance": "if(simplex(x/150,0,z/150) >= 0.7, simplex(x/150,0,z/150), 0.01)"
+      "density": 0.55,
+      "chance": 0.45
     }
   },
   {
@@ -1063,8 +1063,8 @@
           "spruce": 1
         }
       },
-      "density": 1.0,
-      "chance": "if(simplex(x/120,0,z/120) >= 0.4, simplex(x/150,0,z/150), 0.05)"
+      "density": 0.7,
+      "chance": 0.6
     }
   },
   {
@@ -1080,8 +1080,8 @@
           "birch_bush": 5
         }
       },
-      "density": "simplex(x/128,0,z/128) + 0.25",
-      "chance": "if(is('birch_bush'), if(simplex(x/180,0,z/180) > 0.65, 0.75, 0.01), if(simplex(x/120,0,z/120) > 0.7, 0.85, 0.01))"
+      "density": 0.7,
+      "chance": 0.55
     }
   },
   {
@@ -1101,8 +1101,8 @@
           "oak_undergrowth": 1
         }
       },
-      "density": "simplex(x/256,0,z/256) + 0.35",
-      "chance": "if(simplex(x/120,0,z/120) > 0.1, 1.0, 0.1)",
+      "density": 1.0,
+      "chance": 1.0,
       "multipass": true,
       "forestness": 1.0
     }
@@ -1126,8 +1126,8 @@
           "oak_undergrowth": 1
         }
       },
-      "density": "simplex(x/256,0,z/256) + 0.35",
-      "chance": "if(simplex(x/120,0,z/120) > 0.1, 1.0, 0.1)",
+      "density": 1.0,
+      "chance": 1.0,
       "forestness": 1.0
     }
   },
@@ -1147,8 +1147,8 @@
           "azalea_bush": 2
         }
       },
-      "density": "simplex(x/256,0,z/256) + 0.35",
-      "chance": "if(simplex(x/120,0,z/120) > 0.1, 1.0, 0.1)",
+      "density": 1.0,
+      "chance": 1.0,
       "forestness": 1.0
     }
   },
@@ -1166,7 +1166,7 @@
         }
       },
       "density": 0.6,
-      "chance": "if(simplex(x/128,0,z/128) >= 0.5, simplex(x/160,0,z/160) * 0.65, 0.01)"
+      "chance": 0.45
     }
   },
   {
@@ -1182,8 +1182,8 @@
           "oak_undergrowth": 5
         }
       },
-      "density": 0.75,
-      "chance": "if(is('oak_bush_large','oak_undergrowth', 'yucca'), simplex(x/100,0,z/100), if(simplex(x/300,0,z/300) >= 0.25, simplex(x/300,0,z/300) + 0.25, 0.01))"
+      "density": 0.95,
+      "chance": 0.9
     }
   },
   {
@@ -1201,8 +1201,8 @@
           "oak_undergrowth": 2
         }
       },
-      "density": "simplex(x/128,0,z/128) + 0.25",
-      "chance": "if(simplex(x/80,0,z/80) > 0.2, 1.0, 0.02)",
+      "density": 0.95,
+      "chance": 0.9,
       "forestness": 1.0
     }
   },
@@ -1218,8 +1218,8 @@
           "birch_bush": 10
         }
       },
-      "density": 0.6,
-      "chance": "if(simplex(x/150,0,z/150) >= 0.9, simplex(x/150,0,z/150) * 0.5, 0.01)"
+      "density": 0.55,
+      "chance": 0.4
     }
   },
   {
@@ -1235,8 +1235,8 @@
           "birch_bush": 3
         }
       },
-      "density": 1.0,
-      "chance":  "if(simplex(x/50,0,z/50) > 0.65, simplex(x/50,0,z/50), 0.05)"
+      "density": 0.7,
+      "chance": 0.6
     }
   },
   {
@@ -1250,8 +1250,8 @@
           "birch_bush": 1
         }
       },
-      "density": 1.0,
-      "chance":  "if(simplex(x/50,0,z/50) > 0.55, simplex(x/50,0,z/50), 0.05)"
+      "density": 0.5,
+      "chance": 0.45
     }
   },
   {
@@ -1266,8 +1266,8 @@
           "palm": 1
         }
       },
-      "density": 0.6,
-      "chance": "if(is('birch_bush','oak_undergrowth'), 0.45, if(simplex(x/64,0,z/64) >= 0.75, 0.5, 0))"
+      "density": 0.45,
+      "chance": 0.35
     }
   },
   {
@@ -1281,8 +1281,8 @@
           "acacia": 1
         }
       },
-      "density": 0.4,
-      "chance": "if(simplex(x/32,0,z/32) >= 0.60, 0.85, 0.03)"
+      "density": 0.6,
+      "chance": 0.5
     }
   },
   {
@@ -1296,8 +1296,8 @@
           "oak_undergrowth": 1
         }
       },
-      "density": 1.0,
-      "chance": "if(simplex(x/90,0,z/90) > 0.6, 0.35, 0.0)"
+      "density": 0.35,
+      "chance": 0.25
     }
   },
   {
@@ -1312,8 +1312,8 @@
           "oak_undergrowth": 10
         }
       },
-      "density": 0.8,
-      "chance": "if(simplex(x/90,0,z/90) > 0.6, 0.35, 0.0)"
+      "density": 0.6,
+      "chance": 0.5
     }
   },
   {
@@ -1329,8 +1329,8 @@
           "olive": 2
         }
       },
-      "density": 0.1,
-      "chance": "simplex(x/80,0,z/80) + 0.5"
+      "density": 0.55,
+      "chance": 0.45
     }
   },
   {
@@ -1344,8 +1344,8 @@
           "birch_bush": 3
         }
       },
-      "density": 1.0,
-      "chance": "if(simplex(x/80,0,z/80) > 0.9, 0.5, 0.0)"
+      "density": 0.4,
+      "chance": 0.3
     }
   },
   {
@@ -1365,8 +1365,8 @@
           "oak_undergrowth": 4
         }
       },
-      "density": "simplex(x/256,0,z/256) + 0.35",
-      "chance": "if(simplex(x/120,0,z/120) > 0.1, 1.0, 0.1)",
+      "density": 0.85,
+      "chance": 0.8,
       "forestness": 1.0
     }
   },
@@ -1386,8 +1386,8 @@
           "birch_bush": 3
         }
       },
-      "density": "simplex(x/256,0,z/256) + 0.25",
-      "chance": "if(simplex(x/75,0,z/75) > 0.2, 1.0, 0.1)",
+      "density": 0.95,
+      "chance": 0.9,
       "forestness": 1.0
     }
   },
@@ -1403,8 +1403,8 @@
           "oak_bush": 2
         }
       },
-      "density": "simplex(x/256,0,z/256) + 0.25",
-      "chance": "if(simplex(x/75,0,z/75) > 0.7, 1.0, 0.1)"
+      "density": 0.4,
+      "chance": 0.3
     }
   },
   {
@@ -1423,8 +1423,8 @@
           "oak_undergrowth": 1
         }
       },
-      "density": "simplex(x/256,0,z/256) + 0.35",
-      "chance": "if(simplex(x/120,0,z/120) > 0.1, 1.0, 0.1)",
+      "density": 1.0,
+      "chance": 1.0,
       "multipass": true,
       "forestness": 1.0
     }
@@ -1445,8 +1445,8 @@
           "oak_undergrowth": 4
         }
       },
-      "density": "simplex(x/256,0,z/256) + 0.35",
-      "chance": "if(simplex(x/120,0,z/120) > 0.1, 1.0, 0.1)",
+      "density": 0.9,
+      "chance": 0.85,
       "forestness": 1.0
     }
   },
@@ -1469,8 +1469,8 @@
           "oak_undergrowth": 1
         }
       },
-      "density": "simplex(x/256,0,z/256) + 0.35",
-      "chance": "if(simplex(x/120,0,z/120) > 0.1, 1.0, 0.1)",
+      "density": 0.95,
+      "chance": 0.9,
       "forestness": 1.0
     }
   },
@@ -1492,8 +1492,8 @@
           "oak_undergrowth": 1
         }
       },
-      "density": "simplex(x/150,0,z/150) + 0.35",
-      "chance": "if(simplex(x/160,0,z/160) > 0.2, 1.0, 0.1)",
+      "density": 0.95,
+      "chance": 0.9,
       "forestness": 1.0
     }
   },
@@ -1513,8 +1513,8 @@
           "birch_dead": 1
         }
       },
-      "density": 0.2,
-      "chance": "if(simplex(x/64,0,z/64) + 0.1 > 0.6, 0.65, 0.02)"
+      "density": 0.6,
+      "chance": 0.5
     }
   },
   {
@@ -1535,8 +1535,8 @@
           "beech": 3
         }
       },
-      "density": "simplex(x/80,0,z/80)",
-      "chance": "if(simplex(x/80,0,z/80) > 0.2, 1.0, 0.02)"
+      "density": 0.95,
+      "chance": 0.9
     }
   },
   {
@@ -1554,8 +1554,8 @@
           "old_oak": 1
         }
       },
-      "density": 0.4,
-      "chance": "if(is('birch_bush','oak_bush_large','oak_undergrowth'), 1, if(simplex(x/75,0,z/75) > 0.4, 1, 0.02))",
+      "density": 0.85,
+      "chance": 0.8,
       "forestness": 1.0
     }
   },
@@ -1571,8 +1571,8 @@
           "oak_bush": 2
         }
       },
-      "density": "simplex(x/256,0,z/256) + 0.25",
-      "chance": "if(simplex(x/75,0,z/75) > 0.75, 1.0, 0.1)"
+      "density": 0.45,
+      "chance": 0.35
     }
   },
   {
@@ -1587,11 +1587,10 @@
           "oak_undergrowth": 10,
           "birch_bush": 10,
           "palm": 40
-
         }
       },
-      "density": "simplex(x/120,0,z/120)",
-      "chance": "if(is('birch_bush','oak_bush_large','oak_undergrowth'), 0.8, if(simplex(x/120,0,z/120) > 0.4, 1, 0.1))",
+      "density": 0.9,
+      "chance": 0.85,
       "forestness": 1.0
     }
   },
@@ -1613,8 +1612,8 @@
           "tall_mahogany": 150
         }
       },
-      "density": "simplex(x/120,0,z/120)",
-      "chance":  "if(is('birch_bush','oak_bush_large','oak_undergrowth'), 0.8, if(simplex(x/120,0,z/120) > 0.4, 1, 0.1))",
+      "density": 0.8,
+      "chance": 0.75,
       "forestness": 1.0
     }
   },
@@ -1629,8 +1628,8 @@
           "birch_bush": 3
         }
       },
-      "density": 1.0,
-      "chance": "if(simplex(x/120,0,z/120) > 0.7, 0.9, 0.1)"
+      "density": 0.6,
+      "chance": 0.5
     }
   },
   {
@@ -1650,8 +1649,8 @@
           "marula": 1
         }
       },
-      "density": "simplex(x/90,0,z/90) + 0.2",
-      "chance": "if(is('birch_bush','oak_bush_large','oak_undergrowth'), 1, if(simplex(x/90,0,z/90) > 0.3, 1, 0.02))",
+      "density": 1.0,
+      "chance": 1.0,
       "forestness": 1.0
     }
   },
@@ -1672,8 +1671,8 @@
           "mahogany": 300
         }
       },
-      "density": 0.55,
-      "chance": "if(is('birch_bush','oak_bush_large','oak_undergrowth'), 1, if(simplex(x/75,0,z/75) > 0.4, 1, 0.02))",
+      "density": 0.7,
+      "chance": 0.6,
       "forestness": 0.5
     }
   },
@@ -1694,8 +1693,8 @@
           "mahogany": 300
         }
       },
-      "density": "simplex(x/90,0,z/90) + 0.2",
-      "chance": "if(is('birch_bush','oak_bush_large','oak_undergrowth'), 1, if(simplex(x/90,0,z/90) > 0.3, 1, 0.02))",
+      "density": 0.85,
+      "chance": 0.8,
       "forestness": 1.0
     }
   },
@@ -1716,8 +1715,8 @@
           "oak_bush_large": 300
         }
       },
-      "density": "simplex(x/256,0,z/256) + 0.35",
-      "chance": "if(simplex(x/120,0,z/120) > 0.1, 1.0, 0.1)",
+      "density": 0.95,
+      "chance": 0.9,
       "forestness": 1.0
     }
   },
@@ -1737,7 +1736,7 @@
         }
       },
       "density": 0.75,
-      "chance": "if(simplex(x/64,0,z/64) >= 0.5 , 0.85, 0.01)"
+      "chance": 0.65
     }
   },
   {
@@ -1760,8 +1759,8 @@
           "linden": 1
         }
       },
-      "density": "simplex(x/128,0,z/128) + 0.25",
-      "chance": "if(simplex(x/80,0,z/80) >= 0.64, 0.85, 0.01)"
+      "density": 0.65,
+      "chance": 0.55
     }
   },
   {
@@ -1784,8 +1783,8 @@
           "linden": 1
         }
       },
-      "density": "simplex(x/70,0,z/70)",
-      "chance": "if(simplex(x/70,0,z/70) >= 0.55, .85, 0.05)",
+      "density": 0.9,
+      "chance": 0.85,
       "forestness": 1.0
     }
   },
@@ -1802,8 +1801,8 @@
           "spruce_dead": 1
         }
       },
-      "density": "simplex(x/120,0,z/120) + 0.2",
-      "chance": "if(simplex(x/120,0,z/120) >= 0.6, simplex(x/120,0,z/120), 0.01)",
+      "density": 0.8,
+      "chance": 0.75,
       "forestness": 1.0
     }
   },
@@ -1825,7 +1824,7 @@
       },
       "density": 1.0,
       "chance": 1.0,
-      "forestness" : 1.0
+      "forestness": 1.0
     }
   },
   {
@@ -1844,8 +1843,8 @@
           "cedar": 3
         }
       },
-      "density": 0.4,
-      "chance": "if(simplex(x/100,0,z/100) >= 0.64, simplex(x/100,0,z/100) * 0.4, 0.05)",
+      "density": 0.85,
+      "chance": 0.8,
       "forestness": 1.0
     }
   },
@@ -1862,8 +1861,8 @@
           "birch_bush": 5
         }
       },
-      "density": "if(simplex(x/50,0,z/50) + 0.1",
-      "chance": "if(is('birch_bush','oak_undergrowth'), 0.4, if(simplex(x/50,0,z/50) > 0.65, simplex(x/50,0,z/50) + 0.25, 0.05))",
+      "density": 0.85,
+      "chance": 0.8,
       "forestness": 1.0
     }
   },
@@ -1881,8 +1880,8 @@
           "oak_bush_large": 50
         }
       },
-      "density": 0.2,
-      "chance": "if(simplex(x/70,0,z/70) >= 0.55, .85, 0.05)",
+      "density": 0.8,
+      "chance": 0.75,
       "forestness": 1.0
     }
   },
@@ -1898,8 +1897,8 @@
           "acacia": 8
         }
       },
-      "density": 0.8,
-      "chance": "if(simplex(x/80,0,z/80) > 0.8, 0.7, 0.0)",
+      "density": 0.7,
+      "chance": 0.6,
       "forestness": 1.0
     }
   },
@@ -1917,25 +1916,26 @@
           "spruce": 1
         }
       },
-      "density": 0.4,
-      "chance": "if(simplex(x/80,0,z/80) >= 0.64, 0.85, 0.01)",
+      "density": 0.75,
+      "chance": 0.7,
       "forestness": 1.0
     }
-  },{
-  "select": {
-    "name": "still_life:painted_xeric_scrubland"
   },
-  "apply": {
-    "species": {
-      "random": {
-        "joshua": 1,
-        "oak_undergrowth": 5
-      }
+  {
+    "select": {
+      "name": "still_life:painted_xeric_scrubland"
     },
-    "density": 0.6,
-    "chance": 0.01
-  }
-},
+    "apply": {
+      "species": {
+        "random": {
+          "joshua": 1,
+          "oak_undergrowth": 5
+        }
+      },
+      "density": 0.6,
+      "chance": 0.4
+    }
+  },
   {
     "select": {
       "name": "still_life:yucca_scrubland"
@@ -1953,9 +1953,7 @@
         }
       },
       "density": 0.8,
-      "chance": "if(simplex(x/24,0,z/24) >= 0.55, 1.0, 0.01)"
+      "chance": 0.75
     }
   }
 ]
-
-
