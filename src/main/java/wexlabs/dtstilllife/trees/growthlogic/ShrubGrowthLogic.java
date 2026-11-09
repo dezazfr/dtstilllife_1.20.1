@@ -31,7 +31,6 @@ public class ShrubGrowthLogic extends GrowthLogicKit {
     @Override
     public int[] populateDirectionProbabilityMap(GrowthLogicKitConfiguration configuration, DirectionManipulationContext context) {
         final int[] probMap = super.populateDirectionProbabilityMap(configuration, context);
-        Direction originDir = context.signal().dir.getOpposite();
 
         //TODO: Shrubs die if leaves ever disconnect, and possibly if branches grow into the trunk?
         if (context.signal().isInTrunk() && context.signal().delta.getY() >= configuration.get(MAX_TRUNK_HEIGHT)) {

@@ -35,7 +35,6 @@ public class UpAndOutGrowthLogic extends GrowthLogicKit {
     @Override
     public int[] populateDirectionProbabilityMap(GrowthLogicKitConfiguration configuration, DirectionManipulationContext context) {
         final int[] probMap = super.populateDirectionProbabilityMap(configuration, context);
-        Direction originDir = context.signal().dir.getOpposite();
         int deltaFromLowestBranch = context.signal().delta.getY() - context.signal().getSpecies().getLowestBranchHeight();
         int outwardHeightRange = configuration.get(MAX_OUTWARD_HEIGHT) - context.signal().getSpecies().getLowestBranchHeight();
         if (!context.signal().isInTrunk()) {
